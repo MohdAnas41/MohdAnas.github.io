@@ -20,8 +20,8 @@ const About = () => {
             <div className="aspect-square rounded-2xl bg-foreground/5 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
               <img
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Alexander Johnson - Data Scientist"
+                src="/lovable-uploads/22f42de6-b1df-44e2-b4f9-1f28c5a4147c.png"
+                alt="Mohd Anas - Data Scientist"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -32,7 +32,7 @@ const About = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-3">Who I Am</h3>
               <p className="text-foreground/80">
-                I'm Alexander Johnson, a data scientist with a background in statistics and computer science.
+                I'm Mohd Anas, a data scientist with a background in statistics and computer science.
                 I specialize in transforming complex data into actionable insights that drive
                 business decisions. My passion lies in developing machine learning models
                 that solve real-world problems.
@@ -65,7 +65,7 @@ const About = () => {
                   <span>Resume</span>
                 </a>
                 <a 
-                  href="https://github.com/alexjohnson" 
+                  href="https://github.com/mohd-anas" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg transition-all hover:bg-secondary/80"
@@ -74,7 +74,7 @@ const About = () => {
                   <span>GitHub</span>
                 </a>
                 <a 
-                  href="https://linkedin.com/in/alexjohnson" 
+                  href="https://linkedin.com/in/mohd-anas" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg transition-all hover:bg-secondary/80"
