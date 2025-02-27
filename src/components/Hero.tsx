@@ -23,6 +23,7 @@ const Hero = () => {
 
         <AnimatedSection delay={300}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <span className="block mb-2">Alexander Johnson</span>
             Turning <span className="hero-text-gradient">Data</span> into
             <br />
             Meaningful <span className="hero-text-gradient">Insights</span>
