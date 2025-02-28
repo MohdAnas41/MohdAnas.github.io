@@ -10,7 +10,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-            A passionate data scientist with expertise in statistical analysis,
+            A passionate learner in data science, exploring statistical analysis,
             machine learning, and data visualization.
           </p>
         </AnimatedSection>
