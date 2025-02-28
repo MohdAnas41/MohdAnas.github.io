@@ -1,4 +1,3 @@
-
 import { ArrowDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import AnimatedSection from "./AnimatedSection";
@@ -17,7 +16,7 @@ const Hero = () => {
       <div className="section-container z-10 flex flex-col items-center justify-center text-center">
         <AnimatedSection delay={100}>
           <span className="inline-block mb-4 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
-            Data Scientist & Analyst
+            Aspiring Data Scientist & Analyst
           </span>
         </AnimatedSection>
 
@@ -32,9 +31,9 @@ const Hero = () => {
 
         <AnimatedSection delay={500}>
           <p className="max-w-2xl mx-auto text-lg text-foreground/80 mb-8">
-            I specialize in extracting valuable insights from complex datasets,
-            creating powerful visualizations, and building machine learning
-            models that solve real-world problems.
+            I specialize in analyzing real-world datasets, creating insightful 
+            visualizations, and exploring machine learning techniques to extract 
+            valuable insights.
           </p>
         </AnimatedSection>
 
