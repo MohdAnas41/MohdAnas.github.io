@@ -32,17 +32,20 @@ const About = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-3">Who I Am</h3>
               <p className="text-foreground/80">
-                I'm Mohd Anas, a data scientist with a background in statistics and computer science.
-                I specialize in transforming complex data into actionable insights that drive
-                business decisions. My passion lies in developing machine learning models
-                that solve real-world problems.
+                I'm Mohd Anas, an aspiring data scientist with background in mathematics.
+                My journey into data science started from my curiosity about how data can 
+                solve real-world problems and improve decision-making.I specialize 
+                in transforming complex data into actionable insights that drive
+                business decisions. 
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-semibold mb-3">My Approach</h3>
               <p className="text-foreground/80">
-                I approach data science with creativity and analytical precision.
+                My goal is to become a skilled Data Scientist, specializing in data analytics, 
+                AI-driven solutions, and business intelligence. I'm always eager to learn, 
+                collaborate, and take on challenging projects that push me forward.
                 Every dataset tells a story, and I work diligently to uncover meaningful
                 patterns and insights that can lead to innovation and improvement.
               </p>
@@ -51,7 +54,7 @@ const About = () => {
             <div className="pt-4">
               <div className="flex flex-wrap gap-3">
                 <a 
-                  href="#contact" 
+                  href="mailto:wayanas497@gmail.com" 
                   className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg transition-all hover:bg-primary/90"
                 >
                   <Mail size={18} />
@@ -65,7 +68,7 @@ const About = () => {
                   <span>Resume</span>
                 </a>
                 <a 
-                  href="https://github.com/mohd-anas" 
+                  href="https://github.com/MohdAnas41" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg transition-all hover:bg-secondary/80"
@@ -74,7 +77,7 @@ const About = () => {
                   <span>GitHub</span>
                 </a>
                 <a 
-                  href="https://linkedin.com/in/mohd-anas" 
+                  href="https://linkedin.com/in/mohdanas2004" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg transition-all hover:bg-secondary/80"
