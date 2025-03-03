@@ -83,14 +83,6 @@ const About = () => {
                 >
                   <Linkedin size={18} />
                   <span>LinkedIn</span>
-                <a 
-                  href="https://www.kaggle.com/mohdanasjdjdndr" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg transition-all hover:bg-secondary/80"
-                >
-                  <Kaggle size={18} />
-                  <span>Kaggle</span>
                 </a>
               </div>
             </div>
