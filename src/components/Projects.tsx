@@ -20,7 +20,7 @@ const Projects = () => {
         "Developed a machine learning model to predict housing prices based on various features such as location, size, amenities, and market conditions, achieving 92% accuracy.",
       image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       tags: ["Python", "Scikit-learn", "Pandas", "Feature Engineering", "Regression Analysis"],
-      demoLink: "#",
+      demoLink: "https://www.kaggle.com/code/mohdanasjdjdndr/ameshousing-regression",
       githubLink: "https://github.com/MohdAnas41/Ames-Housing-Analysis",
     },
     {
