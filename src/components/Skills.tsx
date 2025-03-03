@@ -1,5 +1,5 @@
 
-import { BarChart3, Brain, Database, Globe, LineChart, Terminal } from "lucide-react";
+import { BarChart3, Brain, Database, Globe, LineChart, Terminal, BookOpen } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import SkillBadge from "./SkillBadge";
 
@@ -10,10 +10,7 @@ const Skills = () => {
       icon: <Terminal size={20} className="text-primary" />,
       skills: [
         { name: "Python", level: "expert" },
-        { name: "R", level: "advanced" },
         { name: "SQL", level: "advanced" },
-        { name: "JavaScript", level: "intermediate" },
-        { name: "Java", level: "beginner" },
       ],
     },
     {
@@ -35,16 +32,12 @@ const Skills = () => {
         { name: "Seaborn", level: "advanced" },
         { name: "Plotly", level: "advanced" },
         { name: "Tableau", level: "intermediate" },
-        { name: "D3.js", level: "beginner" },
       ],
     },
     {
-      title: "Data Engineering",
+      title: "Databases",
       icon: <Database size={20} className="text-primary" />,
       skills: [
-        { name: "Pandas", level: "expert" },
-        { name: "NumPy", level: "expert" },
-        { name: "PySpark", level: "intermediate" },
         { name: "PostgreSQL", level: "advanced" },
         { name: "MongoDB", level: "intermediate" },
       ],
@@ -53,9 +46,8 @@ const Skills = () => {
       title: "Statistical Analysis",
       icon: <LineChart size={20} className="text-primary" />,
       skills: [
-        { name: "Hypothesis Testing", level: "advanced" },
         { name: "Regression Analysis", level: "expert" },
-        { name: "Bayesian Statistics", level: "intermediate" },
+        { name: "Hypothesis Testing", level: "advanced" },
         { name: "Time Series Analysis", level: "advanced" },
         { name: "A/B Testing", level: "advanced" },
       ],
@@ -68,7 +60,6 @@ const Skills = () => {
         { name: "Git", level: "advanced" },
         { name: "Docker", level: "intermediate" },
         { name: "AWS", level: "intermediate" },
-        { name: "Kubernetes", level: "beginner" },
       ],
     },
   ];

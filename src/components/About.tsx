@@ -34,19 +34,20 @@ const About = () => {
               <p className="text-foreground/80">
                 I'm Mohd Anas, an aspiring data scientist with background in mathematics.
                 My journey into data science started from my curiosity about how data can 
-                solve real-world problems and improve decision-making.I specialize 
+                solve real-world problems and improve decision-making. I specialize 
                 in transforming complex data into actionable insights that drive
                 business decisions. 
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold mb-3">My Approach</h3>
+              <h3 className="text-2xl font-semibold mb-3">What I Can Do</h3>
               <p className="text-foreground/80">
-                I'm always eager to learn, collaborate, and take on challenging projects 
-                that push me forward. Every dataset tells a story, and I work 
-                diligently to uncover meaningful patterns and insights that can lead
-                to innovation and improvement.
+                I'm skilled in data cleaning & analysis using Pandas and SQL, creating machine learning 
+                models with Scikit-learn and TensorFlow, visualizing data with Matplotlib, Seaborn, 
+                and Tableau, and performing statistical analysis including regression and hypothesis 
+                testing. Every dataset tells a story, and I work diligently to uncover meaningful 
+                patterns and insights that can lead to innovation and improvement.
               </p>
             </div>
 

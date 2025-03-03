@@ -5,48 +5,39 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      title: "Customer Segmentation Analysis",
+      title: "COVID-19 Data Analysis",
       description:
-        "Developed a machine learning model to segment customers based on purchasing behavior, demographics, and engagement metrics, enabling targeted marketing strategies.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tags: ["Python", "Scikit-learn", "K-means Clustering", "Pandas", "Tableau"],
+        "Conducted exploratory data analysis on COVID-19 datasets to identify trends and patterns across different regions. Created interactive visualizations to effectively communicate findings and insights.",
+      image: "https://images.unsplash.com/photo-1584118624012-df056829fbd0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      tags: ["Python", "Pandas", "Matplotlib", "Seaborn", "Plotly"],
       demoLink: "#",
       githubLink: "#",
       isLarge: true,
     },
     {
-      title: "Predictive Sales Forecasting",
+      title: "House Price Prediction",
       description:
-        "Created a time series forecasting model to predict monthly sales with 92% accuracy, helping the business optimize inventory and staffing decisions.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tags: ["Python", "ARIMA", "Time Series", "Pandas", "Matplotlib"],
+        "Developed a machine learning model to predict housing prices based on various features such as location, size, amenities, and market conditions, achieving 92% accuracy.",
+      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      tags: ["Python", "Scikit-learn", "Pandas", "Feature Engineering", "Regression Analysis"],
       demoLink: "#",
       githubLink: "#",
     },
     {
-      title: "Sentiment Analysis Dashboard",
+      title: "Netflix Data SQL Analysis",
       description:
-        "Built an interactive dashboard to analyze customer sentiment from product reviews, identifying key areas for improvement and competitive advantages.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tags: ["NLP", "BERT", "Python", "Plotly", "Flask"],
+        "Analyzed Netflix content data using SQL to extract insights about content distribution, popular genres, and viewing patterns. Created Tableau dashboards for visualization of findings.",
+      image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      tags: ["SQL", "PostgreSQL", "Tableau", "Data Analysis"],
       demoLink: "#",
       githubLink: "#",
     },
     {
-      title: "Fraud Detection System",
+      title: "Stock Market Prediction",
       description:
-        "Implemented a real-time fraud detection system using ensemble learning techniques, reducing fraudulent transactions by 78% while minimizing false positives.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tags: ["Python", "XGBoost", "Random Forest", "SQL", "AWS"],
-      demoLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "Recommendation Engine",
-      description:
-        "Designed and deployed a product recommendation engine that increased average order value by 23% through personalized suggestions based on user behavior.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tags: ["Collaborative Filtering", "Python", "TensorFlow", "MongoDB"],
+        "Implemented time series analysis and machine learning models to predict stock market movements. Built a dashboard for visualizing predictions and historical performance.",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      tags: ["Python", "LSTM", "Time Series", "Pandas", "Matplotlib"],
       demoLink: "#",
       githubLink: "#",
     },
