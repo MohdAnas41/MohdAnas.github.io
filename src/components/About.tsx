@@ -43,10 +43,11 @@ const About = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-3">My Approach</h3>
               <p className="text-foreground/80">
-                I'm always eager to learn, collaborate, and take on challenging projects 
-                that push me forward. Every dataset tells a story, and I work 
-                diligently to uncover meaningful patterns and insights that can lead
-                to innovation and improvement.
+                My goal is to become a skilled Data Scientist, specializing in data analytics, 
+                AI-driven solutions, and business intelligence. I'm always eager to learn, 
+                collaborate, and take on challenging projects that push me forward.
+                Every dataset tells a story, and I work diligently to uncover meaningful
+                patterns and insights that can lead to innovation and improvement.
               </p>
             </div>
 
@@ -83,13 +84,13 @@ const About = () => {
                 >
                   <Linkedin size={18} />
                   <span>LinkedIn</span>
-                </a>
                 <a 
                   href="https://www.kaggle.com/mohdanasjdjdndr" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg transition-all hover:bg-secondary/80"
                 >
+                  <Kaggle size={18} />
                   <span>Kaggle</span>
                 </a>
               </div>
