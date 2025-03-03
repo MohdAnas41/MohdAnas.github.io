@@ -43,11 +43,10 @@ const About = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-3">My Approach</h3>
               <p className="text-foreground/80">
-                My goal is to become a skilled Data Scientist, specializing in data analytics, 
-                AI-driven solutions, and business intelligence. I'm always eager to learn, 
-                collaborate, and take on challenging projects that push me forward.
-                Every dataset tells a story, and I work diligently to uncover meaningful
-                patterns and insights that can lead to innovation and improvement.
+                I'm always eager to learn, collaborate, and take on challenging projects 
+                that push me forward. Every dataset tells a story, and I work 
+                diligently to uncover meaningful patterns and insights that can lead
+                to innovation and improvement.
               </p>
             </div>
 
