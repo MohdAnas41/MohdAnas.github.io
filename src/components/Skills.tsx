@@ -10,7 +10,7 @@ const Skills = () => {
       icon: <Terminal size={20} className="text-primary" />,
       skills: [
         { name: "Python", level: "expert" },
-        { name: "SQL", level: "advanced" },
+        { name: "SQL", level: "expert" },
       ],
     },
     {
@@ -31,15 +31,17 @@ const Skills = () => {
         { name: "Matplotlib", level: "expert" },
         { name: "Seaborn", level: "advanced" },
         { name: "Plotly", level: "advanced" },
-        { name: "Tableau", level: "intermediate" },
+        { name: "PowerBI", level: "advanced" },
       ],
     },
     {
       title: "Databases",
       icon: <Database size={20} className="text-primary" />,
       skills: [
-        { name: "PostgreSQL", level: "advanced" },
-        { name: "MongoDB", level: "intermediate" },
+        { name: "PostgreSQL", level: "expert" },
+        { name: "MySQL", level: "advanced" },
+        { name: "MSSQL Server", level: "advanced" },
+        { name: "MongoDB", level: "advanced" },
       ],
     },
     {
@@ -47,9 +49,9 @@ const Skills = () => {
       icon: <LineChart size={20} className="text-primary" />,
       skills: [
         { name: "Regression Analysis", level: "expert" },
-        { name: "Hypothesis Testing", level: "advanced" },
-        { name: "Time Series Analysis", level: "advanced" },
-        { name: "A/B Testing", level: "advanced" },
+        { name: "Hypothesis Testing", level: "expert" },
+        { name: "Time Series Analysis", level: "expert" },
+        { name: "A/B Testing", level: "expert" },
       ],
     },
     {
@@ -57,7 +59,7 @@ const Skills = () => {
       icon: <Globe size={20} className="text-primary" />,
       skills: [
         { name: "Jupyter", level: "expert" },
-        { name: "Git", level: "advanced" },
+        { name: "Git", level: "expert" },
         { name: "Docker", level: "intermediate" },
         { name: "AWS", level: "intermediate" },
       ],
