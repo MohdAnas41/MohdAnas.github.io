@@ -29,9 +29,9 @@ const Skills = () => {
       icon: <BarChart3 size={20} className="text-primary" />,
       skills: [
         { name: "Matplotlib", level: "expert" },
-        { name: "Seaborn", level: "advanced" },
-        { name: "Plotly", level: "advanced" },
-        { name: "PowerBI", level: "advanced" },
+        { name: "Seaborn", level: "expert" },
+        { name: "Plotly", level: "expert" },
+        { name: "PowerBI", level: "expert" },
       ],
     },
     {
@@ -39,9 +39,9 @@ const Skills = () => {
       icon: <Database size={20} className="text-primary" />,
       skills: [
         { name: "PostgreSQL", level: "expert" },
-        { name: "MySQL", level: "advanced" },
-        { name: "MSSQL Server", level: "advanced" },
-        { name: "MongoDB", level: "advanced" },
+        { name: "MySQL", level: "expert" },
+        { name: "MSSQL Server", level: "expert" },
+        { name: "MongoDB", level: "expert" },
       ],
     },
     {
@@ -60,7 +60,7 @@ const Skills = () => {
       skills: [
         { name: "Jupyter", level: "expert" },
         { name: "Git", level: "expert" },
-        { name: "Docker", level: "intermediate" },
+        { name: "Docker", level: "advanced" },
         { name: "AWS", level: "intermediate" },
       ],
     },
