@@ -5,10 +5,10 @@ import AnimatedSection from "./AnimatedSection";
 const Certifications = () => {
   const certifications = [
     {
-      title: "IBM Data Science Professional Certificate",
-      issuer: "IBM / Coursera",
+      title: "Machine Learning in Python",
+      issuer: "365 Data Science",
       date: "2023",
-      description: "Comprehensive 9-course program covering the entire data science process, including machine learning, data visualization, and statistical analysis.",
+      description: "Comprehensive course covering machine learning algorithms, data preprocessing, model evaluation, and practical implementation in Python with real-world projects.",
       url: "#"
     },
     {
