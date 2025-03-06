@@ -2,6 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 const Blog = () => {
   const blogPosts = [
@@ -37,7 +38,7 @@ const Blog = () => {
   return (
     <section id="blog" className="py-20 bg-secondary/30">
       <div className="section-container">
-        <AnimatedSection className="mb-16 text-center">
+        <AnimatedSection className="mb-16 text-center" animation="slide-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Blog & Insights</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
@@ -47,18 +48,27 @@ const Blog = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
-            <BlogPostCard key={post.title} post={post} index={index} />
+            <AnimatedSection 
+              key={post.title} 
+              delay={index * 150} 
+              animation="slide-up"
+              className="h-full"
+            >
+              <BlogPostCard post={post} index={index} />
+            </AnimatedSection>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <a
-            href="#"
-            className="inline-flex items-center px-6 py-3 bg-secondary rounded-lg font-medium hover:bg-secondary/80 transition-colors group"
-          >
-            View All Posts 
-            <ArrowRight size={18} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
+          <AnimatedSection delay={500} animation="fade-in" animateOnMount>
+            <a
+              href="#"
+              className="inline-flex items-center px-6 py-3 bg-secondary rounded-lg font-medium hover:bg-secondary/80 transition-colors group"
+            >
+              View All Posts 
+              <ArrowRight size={18} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+            </a>
+          </AnimatedSection>
         </div>
       </div>
     </section>
@@ -82,11 +92,13 @@ const BlogPostCard = ({ post, index }: BlogPostCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   
   return (
-    <AnimatedSection
-      delay={index * 100}
-      className="bg-background rounded-xl overflow-hidden border border-border hover:shadow-md transition-all duration-500"
+    <div
+      className="bg-background rounded-xl overflow-hidden border border-border hover:shadow-md transition-all duration-500 h-full flex flex-col"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      style={{
+        transform: isHovered ? "translateY(-5px)" : "translateY(0px)",
+      }}
     >
       <div className="aspect-video overflow-hidden">
         <img
@@ -99,12 +111,13 @@ const BlogPostCard = ({ post, index }: BlogPostCardProps) => {
           loading="lazy"
         />
       </div>
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-grow">
         <div className="flex items-center text-xs text-foreground/60 mb-2">
-          <span className="bg-primary/10 text-primary px-2 py-1 rounded-full transition-all duration-300" 
+          <span 
+            className="bg-primary/10 text-primary px-2 py-1 rounded-full transition-all duration-300" 
             style={{ 
-              transform: isHovered ? "translateY(0)" : "translateY(3px)",
-              opacity: isHovered ? 1 : 0.9
+              transform: isHovered ? "translateY(0) scale(1.05)" : "translateY(3px) scale(1)",
+              opacity: isHovered ? 1 : 0.9,
             }}
           >
             {post.category}
@@ -114,30 +127,44 @@ const BlogPostCard = ({ post, index }: BlogPostCardProps) => {
           <span className="mx-2">•</span>
           <span>{post.readTime}</span>
         </div>
-        <h3 className="text-xl font-semibold mb-2 line-clamp-2 transition-colors duration-300" 
+        <h3 
+          className="text-xl font-semibold mb-2 line-clamp-2 transition-colors duration-300" 
           style={{ 
-            color: isHovered ? 'hsl(var(--primary))' : 'currentColor' 
+            color: isHovered ? 'hsl(var(--primary))' : 'currentColor',
+            transform: isHovered ? "translateY(-2px)" : "translateY(0)",
           }}
         >
           {post.title}
         </h3>
-        <p className="text-foreground/70 mb-4 line-clamp-3">{post.excerpt}</p>
-        <a
-          href={post.url}
-          className="inline-flex items-center text-primary hover:text-primary/80 transition-all duration-300 group"
+        <p 
+          className="text-foreground/70 mb-4 line-clamp-3 transition-all duration-300"
+          style={{ 
+            transform: isHovered ? "translateY(-1px)" : "translateY(0)",
+          }}
         >
-          Read More 
-          <ArrowRight 
-            size={16} 
-            className="ml-1 transition-transform duration-300 group-hover:translate-x-1" 
-          />
-        </a>
+          {post.excerpt}
+        </p>
+        <div className="mt-auto">
+          <a
+            href={post.url}
+            className="inline-flex items-center text-primary hover:text-primary/80 transition-all duration-300 group"
+            style={{
+              transform: isHovered ? "translateX(3px)" : "translateX(0)",
+            }}
+          >
+            Read More 
+            <ArrowRight 
+              size={16} 
+              className="ml-1 transition-transform duration-300 group-hover:translate-x-1" 
+              style={{
+                transform: isHovered ? "translateX(3px)" : "translateX(0)",
+              }}
+            />
+          </a>
+        </div>
       </div>
-    </AnimatedSection>
+    </div>
   );
 };
-
-// Import the cn utility 
-import { cn } from "@/lib/utils";
 
 export default Blog;

@@ -46,10 +46,22 @@ const ProjectCard = ({
       </div>
       
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2 transition-colors duration-300 group-hover:text-primary">
+        <h3 
+          className="text-xl font-semibold mb-2 transition-all duration-300 group-hover:text-primary"
+          style={{
+            transform: isHovered ? "translateY(-3px)" : "translateY(0)",
+          }}
+        >
           {title}
         </h3>
-        <p className="text-foreground/70 mb-4 line-clamp-3">{description}</p>
+        <p 
+          className="text-foreground/70 mb-4 line-clamp-3 transition-all duration-300"
+          style={{ 
+            transform: isHovered ? "translateY(-2px)" : "translateY(0)",
+          }}
+        >
+          {description}
+        </p>
         
         <div className="flex flex-wrap gap-2 mb-4">
           {tags.map((tag, index) => (
@@ -59,7 +71,8 @@ const ProjectCard = ({
               style={{ 
                 transitionDelay: `${index * 50}ms`,
                 transform: isHovered ? "translateY(0)" : "translateY(5px)",
-                opacity: isHovered ? 1 : 0.8
+                opacity: isHovered ? 1 : 0.8,
+                animation: isHovered ? `pulse 2s infinite ease-in-out` : "none"
               }}
             >
               {tag}
@@ -67,7 +80,13 @@ const ProjectCard = ({
           ))}
         </div>
         
-        <div className="flex space-x-4">
+        <div 
+          className="flex space-x-4 transition-all duration-500"
+          style={{ 
+            transform: isHovered ? "translateY(0)" : "translateY(5px)",
+            opacity: isHovered ? 1 : 0.8,
+          }}
+        >
           {demoLink && (
             <a
               href={demoLink}

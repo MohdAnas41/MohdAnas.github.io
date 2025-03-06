@@ -46,7 +46,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-secondary/30">
       <div className="section-container">
-        <AnimatedSection className="mb-16 text-center">
+        <AnimatedSection className="mb-16 text-center" animation="slide-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
@@ -57,7 +57,12 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <AnimatedSection key={project.title} delay={index * 100}>
+            <AnimatedSection 
+              key={project.title} 
+              delay={index * 150} 
+              animation="slide-up"
+              className="h-full"
+            >
               <ProjectCard {...project} />
             </AnimatedSection>
           ))}
