@@ -8,6 +8,8 @@ interface AnimatedSectionProps {
   id?: string;
   delay?: number;
   animation?: "fade-in" | "slide-up" | "scale-in" | "slide-in-right";
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
 const AnimatedSection = ({
@@ -16,6 +18,8 @@ const AnimatedSection = ({
   id,
   delay = 0,
   animation = "fade-in",
+  onMouseEnter,
+  onMouseLeave,
 }: AnimatedSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -51,6 +55,8 @@ const AnimatedSection = ({
       id={id}
       className={cn("opacity-0", className)}
       style={{ animationFillMode: "forwards" }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       {children}
     </section>
