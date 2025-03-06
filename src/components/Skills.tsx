@@ -1,5 +1,5 @@
 
-import { BarChart3, Brain, Database, Globe, LineChart, Terminal, BookOpen } from "lucide-react";
+import { BarChart3, Brain, Database, Globe, LineChart, Terminal, BookOpen, Star } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import SkillBadge from "./SkillBadge";
 
@@ -83,7 +83,7 @@ const Skills = () => {
             <AnimatedSection
               key={category.title}
               delay={index * 100}
-              className="bg-background rounded-xl p-6 shadow-sm border border-border"
+              className="bg-background rounded-xl p-6 shadow-sm border border-border hover:shadow-md transition-shadow duration-300"
             >
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -92,11 +92,17 @@ const Skills = () => {
                 <h3 className="text-xl font-semibold">{category.title}</h3>
               </div>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="space-y-3">
                 {category.skills.map((skill) => (
-                  <SkillBadge key={skill.name} level={skill.level as any}>
-                    {skill.name}
-                  </SkillBadge>
+                  <div 
+                    key={skill.name} 
+                    className="flex items-center justify-between p-2 hover:bg-muted/50 rounded-lg transition-colors"
+                  >
+                    <span className="font-medium">{skill.name}</span>
+                    <div className="flex space-x-1">
+                      {renderSkillLevel(skill.level)}
+                    </div>
+                  </div>
                 ))}
               </div>
             </AnimatedSection>
@@ -105,6 +111,31 @@ const Skills = () => {
       </div>
     </section>
   );
+};
+
+const renderSkillLevel = (level: "beginner" | "intermediate" | "advanced" | "expert") => {
+  const levels = {
+    beginner: 1,
+    intermediate: 2,
+    advanced: 3,
+    expert: 4,
+  };
+
+  const stars = [];
+  for (let i = 0; i < levels[level]; i++) {
+    stars.push(
+      <Star key={i} size={16} className="fill-primary text-primary" />
+    );
+  }
+  
+  // Add empty stars for clearer visualization
+  for (let i = levels[level]; i < 4; i++) {
+    stars.push(
+      <Star key={i + 4} size={16} className="text-primary/30" />
+    );
+  }
+
+  return stars;
 };
 
 export default Skills;
