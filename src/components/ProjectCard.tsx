@@ -24,7 +24,7 @@ const ProjectCard = ({
   return (
     <div
       className={cn(
-        "group relative overflow-hidden rounded-xl card-hover border border-border",
+        "group relative overflow-hidden rounded-xl card-hover border border-border bg-background/50 backdrop-blur-sm",
         isLarge ? "md:col-span-2" : ""
       )}
     >
@@ -47,7 +47,7 @@ const ProjectCard = ({
           {tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs px-2 py-1 rounded-full bg-secondary text-secondary-foreground"
+              className="text-xs px-2 py-1 rounded-full bg-secondary/80 text-secondary-foreground backdrop-blur-sm"
             >
               {tag}
             </span>

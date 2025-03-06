@@ -1,7 +1,5 @@
-
 import { BarChart3, Brain, Database, Globe, LineChart, Terminal, BookOpen, Star } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import SkillBadge from "./SkillBadge";
 
 const Skills = () => {
   const skillCategories = [
@@ -83,7 +81,7 @@ const Skills = () => {
             <AnimatedSection
               key={category.title}
               delay={index * 100}
-              className="bg-background rounded-xl p-6 shadow-sm border border-border hover:shadow-md transition-shadow duration-300"
+              className="bg-background/50 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-border hover:shadow-md transition-all duration-300"
             >
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
