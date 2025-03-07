@@ -7,23 +7,23 @@ const Certifications = () => {
     {
       title: "Machine Learning in Python",
       issuer: "365 Data Science",
-      date: "2023",
+      date: "2024",
       description: "Comprehensive course covering machine learning algorithms, data preprocessing, model evaluation, and practical implementation in Python with real-world projects.",
-      url: "#"
+      url: "https://365datascience.com/courses/machine-learning-in-python/"
     },
     {
       title: "Google Data Analytics Certificate",
       issuer: "Google / Coursera",
       date: "2023",
       description: "Rigorous program covering data analysis tools and techniques, including SQL, R, Tableau, and spreadsheets.",
-      url: "#"
+      url: "https://www.coursera.org/professional-certificates/google-data-analytics"
     },
     {
       title: "Machine Learning Specialization",
       issuer: "Stanford / Coursera - Andrew Ng",
       date: "2022",
       description: "In-depth course on machine learning algorithms, neural networks, and practical applications.",
-      url: "#"
+      url: "https://www.coursera.org/specializations/machine-learning-introduction"
     },
     {
       title: "Kaggle Competitions",
