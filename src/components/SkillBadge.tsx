@@ -1,14 +1,15 @@
 
-import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
+type SkillLevel = "beginner" | "intermediate" | "advanced" | "expert";
+
 interface SkillBadgeProps {
-  children: ReactNode;
+  skillName: string;
   className?: string;
-  level?: "beginner" | "intermediate" | "advanced" | "expert";
+  level?: SkillLevel;
 }
 
-const SkillBadge = ({ children, className, level }: SkillBadgeProps) => {
+const SkillBadge = ({ skillName, className, level }: SkillBadgeProps) => {
   const levelColors = {
     beginner: "bg-secondary/80 text-secondary-foreground border border-border",
     intermediate: "bg-primary/20 text-primary-foreground/90 border border-primary/30",
@@ -26,7 +27,7 @@ const SkillBadge = ({ children, className, level }: SkillBadgeProps) => {
         className
       )}
     >
-      {children}
+      {skillName}
     </div>
   );
 };
