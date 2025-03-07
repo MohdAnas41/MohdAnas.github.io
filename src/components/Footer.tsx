@@ -28,7 +28,7 @@ const Footer = () => {
               <Twitter size={18} />
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/MohdAnas41"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary/80 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
@@ -37,7 +37,7 @@ const Footer = () => {
               <Github size={18} />
             </a>
             <a
-              href="https://linkedin.com/in/"
+              href="https://linkedin.com/in/mohdanas2004"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary/80 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
@@ -59,6 +59,43 @@ const Footer = () => {
           <p className="text-sm text-foreground/60">
             &copy; {currentYear} Data Scientist Portfolio. All rights reserved.
           </p>
+
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/60 hover:text-primary transition-colors"
+              aria-label="Twitter"
+            >
+              <Twitter size={18} />
+            </a>
+            <a
+              href="https://github.com/MohdAnas41"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/60 hover:text-primary transition-colors"
+              aria-label="GitHub"
+            >
+              <Github size={18} />
+            </a>
+            <a
+              href="https://linkedin.com/in/mohdanas2004"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/60 hover:text-primary transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={18} />
+            </a>
+            <a
+              href="mailto:wayanas497@gmail.com"
+              className="text-foreground/60 hover:text-primary transition-colors"
+              aria-label="Email"
+            >
+              <Mail size={18} />
+            </a>
+          </div>
 
           <a
             href="#home"

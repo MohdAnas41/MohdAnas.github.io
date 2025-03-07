@@ -91,7 +91,7 @@ const Skills = () => {
                   {skills[cat as SkillCategory].map((skill) => (
                     <SkillBadge
                       key={skill.name}
-                      name={skill.name}
+                      skillName={skill.name}
                       level={skill.level}
                     />
                   ))}
