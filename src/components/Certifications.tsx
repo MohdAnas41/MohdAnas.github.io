@@ -12,18 +12,18 @@ const Certifications = () => {
       url: "https://365datascience.com/courses/machine-learning-in-python/"
     },
     {
-      title: "Google Data Analytics Certificate",
-      issuer: "Google / Coursera",
-      date: "2023",
-      description: "Rigorous program covering data analysis tools and techniques, including SQL, R, Tableau, and spreadsheets.",
-      url: "https://www.coursera.org/professional-certificates/google-data-analytics"
+      title: "BCG Data Science Job Simulation",
+      issuer: "BCG",
+      date: "2025",
+      description: "Virtual experience program focusing on real-world data science applications in consulting, including customer segmentation, predictive modeling, and business recommendations.",
+      url: "https://www.theforage.com/virtual-internships/prototype/Tcz8gTtprzAS4xSoK/Data-Science-Virtual-Experience-Program"
     },
     {
-      title: "Machine Learning Specialization",
-      issuer: "Stanford / Coursera - Andrew Ng",
-      date: "2022",
-      description: "In-depth course on machine learning algorithms, neural networks, and practical applications.",
-      url: "https://www.coursera.org/specializations/machine-learning-introduction"
+      title: "Applied Data Science Lab",
+      issuer: "WorldQuant University",
+      date: "Ongoing",
+      description: "Hands-on program covering advanced data science concepts, statistical modeling, and real-world project implementation.",
+      url: "https://www.wqu.edu/programs/applied-ds-lab/"
     },
     {
       title: "Kaggle Competitions",
