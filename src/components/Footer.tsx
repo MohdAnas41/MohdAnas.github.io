@@ -19,28 +19,34 @@ const Footer = () => {
 
           <div className="flex space-x-6 mb-6 md:mb-0">
             <a
-              href="#"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary/80 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
               aria-label="Twitter"
             >
               <Twitter size={18} />
             </a>
             <a
-              href="#"
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary/80 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
               aria-label="GitHub"
             >
               <Github size={18} />
             </a>
             <a
-              href="#"
+              href="https://linkedin.com/in/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary/80 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
               aria-label="LinkedIn"
             >
               <Linkedin size={18} />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:wayanas497@gmail.com"
               className="w-10 h-10 rounded-full flex items-center justify-center bg-secondary/80 text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
               aria-label="Email"
             >
