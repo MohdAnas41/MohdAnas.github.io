@@ -1,69 +1,57 @@
-# Welcome to your Portfolio project
+# Portfolio Website
 
-## Project info
+Welcome to my portfolio website! This repository contains the source code for my personal portfolio, showcasing my projects, skills, and experience.
 
-**URL**: https://lovable.dev/projects/0f5b9f52-8fe6-4473-860b-b298a4b9d705
+## Features
+- **Responsive Design**: Optimized for all devices.
+- **Projects Showcase**: Display of my best work with descriptions and links.
+- **About Me**: Information about my background and expertise.
+- **Contact Form**: Allows visitors to reach out directly.
+- **Dark Mode**: User-friendly experience with light and dark themes.
 
-## How can I edit this code?
+## Technologies Used
+- **Frontend**: HTML, CSS, JavaScript (React.js, Next.js, Vue.js, or other frameworks as applicable)
+- **Styling**: Tailwind CSS / Bootstrap / SCSS
+- **Backend**: Node.js / Express / Firebase / Other (if applicable)
+- **Deployment**: Vercel / Netlify / GitHub Pages / Other
 
-There are several ways of editing your application.
+## Installation & Setup
+To run this project locally, follow these steps:
 
-**Use Lovable**
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/MohdAnas41/portfolio.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd portfolio
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
+5. Open your browser and go to `http://localhost:3000`.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0f5b9f52-8fe6-4473-860b-b298a4b9d705) and start prompting.
+## Deployment
+This project is deployed using [Vercel/Netlify/GitHub Pages]. To deploy it yourself:
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Push your changes to the `main` branch.
+2. Connect your repository to your deployment service.
+3. Configure any required environment variables.
+4. Deploy and enjoy!
 
-**Use your preferred IDE**
+## Contributing
+If you’d like to contribute or suggest improvements, feel free to fork the repository and submit a pull request.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Contact
+For inquiries or collaborations, reach out via:
+- Email: your-email@example.com
+- LinkedIn: (https://linkedin.com/in/mohdanas2004)
+- Portfolio: (https://your-portfolio.com)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0f5b9f52-8fe6-4473-860b-b298a4b9d705) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## License
+This project is licensed under the MIT License.
